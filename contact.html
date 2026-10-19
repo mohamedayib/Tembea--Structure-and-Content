@@ -1,0 +1,148 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tembea | Contact Us</title>
+</head>
+
+<body>
+
+    <a href="#main-content">Skip to main content</a>
+
+    <header>
+        <h1><a href="./index.html">Tembea Kenya</a></h1>
+
+        <p>Discover Kenya's diverse destinations, wildlife and culture.</p>
+
+        <nav aria-label="Main navigation">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html" aria-current="page">Contact</a>
+            <a href="./destinations.html">Destinations</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section>
+            <h2>Plan Your Trip with Tembea</h2>
+
+            <p>
+                Interested in exploring Kenya? Complete the form below
+                to tell us about your travel plans and preferences.
+            </p>
+
+            <form action="#" method="get">
+
+                <p>
+                    <label for="full-name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="full-name"
+                        autocomplete="name"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="destination">Preferred Destination:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">-- Select a destination --</option>
+                        <option value="nairobi-national-park">Nairobi National Park</option>
+                        <option value="karura-forest">Karura Forest</option>
+                        <option value="hells-gate">Hell's Gate National Park</option>
+                        <option value="lake-nakuru">Lake Nakuru National Park</option>
+                        <option value="mombasa">Mombasa</option>
+                        <option value="diani-beach">Diani Beach</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="travel-date">Preferred Travel Date:</label>
+                    <input
+                        type="date"
+                        id="travel-date"
+                        name="travel-date"
+                    >
+                </p>
+
+                <fieldset>
+                    <legend>Preferred Travel Style:</legend>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="budget"
+                            name="travel-style"
+                            value="budget"
+                            required
+                        >
+                        <label for="budget">Budget</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="mid-range"
+                            name="travel-style"
+                            value="mid-range"
+                        >
+                        <label for="mid-range">Mid-range</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="luxury"
+                            name="travel-style"
+                            value="luxury"
+                        >
+                        <label for="luxury">Luxury</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <label for="message">Tell us about your trip:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        cols="40"
+                        placeholder="Tell us about your plans, group size, interests or questions."
+                    ></textarea>
+                </p>
+
+                <button type="submit">Send Trip Inquiry</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mohamed Dayib</p>
+
+        <address>
+            Contact us:
+            <a href="mailto:Mohamedtayyib57@gmail.com">
+                Mohamedtayyib57@gmail.com
+            </a>
+        </address>
+    </footer>
+
+</body>
+</html>
