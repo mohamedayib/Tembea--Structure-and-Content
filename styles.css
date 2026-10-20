@@ -1,12 +1,26 @@
-.title{
-    color: darkgreen;
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+:root{
+    --fonts: "Roboto", sans-serif;
+    --color-brand: #18ad4e;
+    --color-alternate: hsl(211, 41%, 15%); /* use hex here */
+    --color-text: #000000;
 }
-
-.tagline{
-    color: red;
-    font-size: 20px;
-
+body{
+    font-family: var(--fonts);
+}
+header nav a{
+    color: var(--color-brand);
+    text-decoration: none;
+}
+header nav a:hover{
+    color: var(--color-alternate)
+}
+.title{
+    color: var(--color-brand);
 }
 #subtitle{
-    color: brown;
+    color: var(--color-alternate);
+}
+.tagline{
+    color: var(--color-text);
 }
