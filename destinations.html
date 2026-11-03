@@ -5,33 +5,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tembea | Destinations</title>
+    <link rel="stylesheet" href="styles.css">
+
   </head>
 
   <body>
-    <header>
-      <h1><a href="./index.html">Tembea Kenya</a></h1>
+    <header class="navbar">
+      <div class="navbar-logo">
+        <h1><a href="./index.html" >Tembea Kenya</a></h1>
 
-      <p>Discover Kenya's diverse destinations, wildlife and culture.</p>
+        <p>Discover Kenya's diverse destinations, wildlife and culture.</p>
+      </div>
 
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About Us</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./destinations.html" aria-current="page">Destinations</a>
+      <nav aria-label="Main">
+        <div class="navbar-links">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About Us</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./destinations.html" aria-current="page">Destinations</a>
+        </div>
+            <a href="./destinations.html" class="btn">Explore Now</a>
+
       </nav>
     </header>
     
 
-    <main>
+    <main class="destinations">
       <h2>Explore Kenya's Destinations</h2>
 
-      <section>
+      <section >
         <h2>Safari and Wildlife</h2>
 
-        <article>
+        <article class="gallery">
           <h3>Nairobi National Park</h3>
 
-          <img
+          <img class="gallery-image"
             src="./Images/nairobi-nationalpark.jpg"
             alt="Two zebras grazing with a giraffe and antelopes in the background at Nairobi National Park"
             width="500"
@@ -50,10 +58,10 @@
           </p>
         </article>
 
-        <article>
+        <article class="gallery">
           <h3>Karura Forest</h3>
 
-          <img
+          <img class="gallery-image"
             src="./Images/karura-forest.jpg"
             alt="Serene forest surroundings with greenery and walking trails in Karura Forest"
             width="300"
@@ -72,10 +80,10 @@
           </p>
         </article>
 
-        <article>
+        <article class="gallery">
           <h3>Hell's Gate National Park</h3>
 
-          <img
+          <img class="gallery-image"
             src="./Images/hells-gate.jpg"
             alt="Rocky cliffs and a natural landscape at Hell's Gate National Park"
             width="300"
@@ -94,11 +102,11 @@
           </p>
         </article>
 
-        <article>
+        <article class="gallery">
           <h3>Lake Nakuru National Park</h3>
 
-          <img
-            src="./Images/hells-gate.jpg"
+          <img class="gallery-image"
+            src="./Images/nakuru-city.jpg"
             alt="Flamingos gathered along the shores of Lake Nakuru"
             width="300"
             height="500"
@@ -119,10 +127,10 @@
       <section>
         <h2>Coast and Beaches</h2>
 
-        <article>
+        <article class="gallery">
           <h3>Mombasa</h3>
 
-          <img
+          <img class="gallery-image"
             src="./Images/mombasa-city.jpg"
             alt="Mombasa coastline with buildings and the Indian Ocean"
             width="300"
@@ -141,10 +149,10 @@
           </p>
         </article>
 
-        <article>
+        <article class="gallery">
           <h3>Diani Beach</h3>
 
-          <img
+          <img class="gallery-image"
             src="./Images/diani-beach.jpg"
             alt="White sandy beach and clear turquoise water at Diani Beach"
             width="300"
@@ -172,7 +180,7 @@
             Comparison of selected Kenyan destinations
           </caption>
 
-          <thead>
+          <thead >
             <tr>
               <th scope="col">Destination</th>
               <th scope="col">Region</th>
@@ -181,43 +189,43 @@
             </tr>
           </thead>
 
-          <tbody>
-            <tr>
+          <tbody >
+            <tr >
               <td>Nairobi National Park</td>
               <td>Nairobi</td>
               <td>July–October</td>
               <td>KSh 5,000–10,000</td>
             </tr>
 
-            <tr>
+            <tr >
               <td>Karura Forest</td>
               <td>Nairobi</td>
               <td>June–October</td>
               <td>KSh 2,000–5,000</td>
             </tr>
 
-            <tr>
+            <tr >
               <td>Hell's Gate National Park</td>
               <td>Nakuru</td>
               <td>June–October</td>
               <td>KSh 4,000–8,000</td>
             </tr>
 
-            <tr>
+            <tr >
               <td>Lake Nakuru National Park</td>
               <td>Nakuru</td>
               <td>June–October</td>
               <td>KSh 5,000–12,000</td>
             </tr>
 
-            <tr>
+            <tr >
               <td>Mombasa</td>
               <td>Coast</td>
               <td>January–March</td>
               <td>KSh 5,000–12,000</td>
             </tr>
 
-            <tr>
+            <tr >
               <td>Diani Beach</td>
               <td>Coast</td>
               <td>January–March</td>

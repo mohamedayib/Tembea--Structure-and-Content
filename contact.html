@@ -5,34 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tembea | Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-    <header>
-        <h1><a href="./index.html">Tembea Kenya</a></h1>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <h1><a href="./index.html" class="logo">Tembea Kenya</a></h1>
 
-        <p>Discover Kenya's diverse destinations, wildlife and culture.</p>
+            <p>Discover Kenya's diverse destinations, wildlife and culture.</p>
+        </div>
 
-        <nav aria-label="Main navigation">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About Us</a>
-            <a href="./contact.html" aria-current="page">Contact</a>
-            <a href="./destinations.html">Destinations</a>
+        <nav aria-label="Main" >
+            <div class="navbar-links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <a href="./contact.html" aria-current="page">Contact</a>
+                <a href="./destinations.html">Destinations</a>
+
+            </div>
+            <a href="./destinations.html" class="btn">Explore Now</a>
+
         </nav>
     </header>
 
-    <main id="main-content">
+    <main class="container contact-section" >
 
         <section>
+          <div class="contact-card">
             <h2>Plan Your Trip with Tembea</h2>
 
             <p>
                 Interested in exploring Kenya? Complete the form below
                 to tell us about your travel plans and preferences.
             </p>
-
+           </div>
             <form action="#" method="get">
-
+                <div class="form-group">
                 <p>
                     <label for="full-name">Full Name:</label>
                     <input
@@ -43,7 +53,7 @@
                         required
                     >
                 </p>
-
+                </div>              
                 <p>
                     <label for="email">Email Address:</label>
                     <input
@@ -77,8 +87,9 @@
                     >
                 </p>
 
-                <fieldset>
+                <fieldset class="form-group">
                     <legend>Preferred Travel Style:</legend>
+                        <div class="radio-group">
 
                     <p>
                         <input
@@ -110,6 +121,7 @@
                         >
                         <label for="luxury">Luxury</label>
                     </p>
+                    </div>
                 </fieldset>
 
                 <p>

@@ -4,88 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tembea</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
-    <header>
-        <h1><a href="./index.html">Tembea Kenya</a></h1>
-        <p> Kenya is a home to different and rare wildlife</p>
-        <nav>
-            <a href="./index.html" aria-current="page">Home</a>
-            <a href="./about.html">About us</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./destinations.html" aria-current="page">Destinations</a>
+  <main>
+    <header class="navbar"> 
+        <div class="navbar-logo">
+            <h1><a href="./index.html" class="logo">Tembea Kenya</a></h1>
+            <p>Kenya is a home to different and rare wildlife</p>
+        </div>
+    
+    <nav aria-label="Main">
+        <div class="navbar-links">
+         <a href="./index.html" aria-current="page">Home</a>
+         <a href="./about.html">About us</a>
+         <a href="./contact.html">Contact</a>
+         <a href="./destinations.html">Destinations</a>
 
-        </nav>
-    </header>
-    <main>
-        <section>
+        </div>
+            <a href="./destinations.html" class="btn">Explore Now</a>
+
+    </nav>
+  </header>
+    <main >
+      <section class="hero" >
+        <div >
             <h2>Featured Destinations</h2>
-            <article>
+        </div>
+      
+        <article class="card-row"> 
+            <div class="card">
+                <img src="./Images/nairobi-nationalpark.jpg" alt="A herd of elephants walking through the savannah in Masai Mara National Reserve" width="300" height="500">
+                <h3>Masai Mara National Reserve</h3>
+                <p>Masai Mara is a world-renowned wildlife reserve in Kenya, famous for its diverse wildlife and the annual wildebeest migration.</p>
+                <a href="./destinations.html">explore more</a> 
+            </div>
+            <div class="card">
                 <h3>Nairobi City</h3>
                 <figure>
                     <img src="./Images/nairobi-city.jpg" alt="Aerial view of Nairobi city and the Nairobi Expressway" width="300" height="500">
                     <figcaption>Aerial view of Nairobi city and the Nairobi Expressway</figcaption>
                 </figure>
                 <p>Nairobi is Kenya's vibrant capital and is famous for having a national park within the city</p>
-                <a href="./about.html">Learn more</a>
+                 <a href="./destinations.html">explore more</a>
+            </div>
 
-            </article>
-            <aside>
-                <h2>Travel Tips</h2>
+        </article >
+
+        <aside>
+           <div class="card">
+             <h2>Travel Tips</h2>
                 <ul>
-
                    <li>Nairobi gets really cold,carry heavy clothes</li> 
                    <li> Be ready to use Mpesa- cashless payments</li>
                    <li> Swahili and English are widely spoken </li>
                 </ul>
-
-            </aside>
-            </head>
-             <article>
+            </div>
+        </aside>
+          
+        <article class="card-row">
+            <div class="card">
+                <h3>Lake Naivasha</h3>
+                <figure>
+                    <img src="./Images/lake-naivasha.webp" alt="A boat on Lake Naivasha with hippos and birds in the background" width="300" height="500">
+                    <figcaption>A boat on Lake Naivasha with hippos and birds in the background</figcaption>
+                </figure>
+                <p>Lake Naivasha is a freshwater lake in Kenya's Great Rift Valley, known for its scenic beauty and diverse wildlife.</p>
+                <a href="./destinations.html">explore more</a>
+            </div>
+            <div class="card">
                 <h3>Mombasa County</h3>
                 <figure>
                     <img src="./Images/mombasa-city.jpg" alt="Coastal hotel overlooking the Indian Ocean in Mombasa" width="300" height="500">
                     <figcaption>Coastal hotel overlooking the Indian Ocean in Mombasa</figcaption>
                 </figure>
                 <p>Mombasa is rich in cultural activities with a lot of fun</p>
-                <a href="./about.html">learn more</a>
-
-            </article>
-            <aside>
-                <h2>Travel Tips</h2>
+                <a href="./destinations.html">explore more</a>
+            </div>  
+        </article>
+        <aside>
+             <div class="card">
+            <h2>Travel Tips</h2>
                 <ul>
                     <li>Weather is hot,dress light clothes</li>
                     <li>Very Generous people, dont turn down an invite</li>
                    <li> Swahili is  widely spoken</li> 
                 </ul>
+            </div>
+        </aside>
 
-            </aside>
-             <article>
+
+        <article class="card-row">
+            <div class="card">
                 <h3>Nakuru City</h3>
                 <figure>
-                    <img src="./Images/nakuru-city.jpg" alt=""Flamingos gathered along the shore of Lake Nakuru" width="300" height="500">
+                    <img src="./Images/nakuru-city.jpg" alt="Flamingos gathered along the shore of Lake Nakuru" width="300" height="500">
                     <figcaption>Flamingos gathered along the shore of Lake Nakuru</figcaption>
                 </figure>
                 <p>The city with beautiful Flamingos</p>
-                <a href="./about.html">Learn more</a>
+                <a href="./destinations.html">explore more</a>
+            </div>
+        </article>
 
-            </article>
-            <aside>
-                <h2>Travel Tips</h2>
+        <aside>
+             <div class="card">
+            <h2>Travel Tips</h2>
                 <ul>
                    <li>Very many tourist attraction sites</li> 
                    <li>Moderate weather</li>  
                    <li>Cheaper prices for goods and services</li> 
                 </ul>
 
-            </aside>
+            </div>
+        </aside>
         </section>
     </main>
 
 <footer>
+   
     &copy; 2026 Mohamed Dayib  
     Contact us <a href="mailto:Mohamedtayyib57@gmail.com">Email</a>
+    
 </footer>
 </body>
 </html>
