@@ -11,24 +11,32 @@
 
 <body>
     <header class="navbar">
-        <div class="navbar-logo">
-            <h1><a href="./index.html" class="logo">Tembea Kenya</a></h1>
+  <div class="navbar-logo">
+    <h1><a href="./index.html" class="logo">Tembea Kenya</a></h1>
+    <p>Kenya is a home to different and rare wildlife</p>
+  </div>
 
-            <p>Discover Kenya's diverse destinations, wildlife and culture.</p>
-        </div>
+  <!-- Mobile Menu Toggle Button -->
+  <button 
+    type="button" 
+    class="menu-toggle" 
+    aria-controls="main-nav" 
+    aria-expanded="false" 
+    aria-label="Toggle navigation menu">
+    <span class="hamburger-icon" aria-hidden="true"></span>
+  </button>
 
-        <nav aria-label="Main" >
-            <div class="navbar-links">
-                <a href="./index.html">Home</a>
-                <a href="./about.html">About Us</a>
-                <a href="./contact.html" aria-current="page">Contact</a>
-                <a href="./destinations.html">Destinations</a>
+  <nav id="main-nav" aria-label="Main">
+    <div class="navbar-links">
+      <a href="./index.html" aria-current="page">Home</a>
+      <a href="./about.html">About us</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./destinations.html">Destinations</a>
+    </div>
+    <a href="./destinations.html" class="btn">Explore Now</a>
+  </nav>
+</header>
 
-            </div>
-            <a href="./destinations.html" class="btn">Explore Now</a>
-
-        </nav>
-    </header>
 
     <main class="container contact-section" >
 
@@ -152,6 +160,7 @@
             </a>
         </address>
     </footer>
+    <script type="module" src="./js/main.js" ></script>
 
 </body>
 </html>
