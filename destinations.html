@@ -4,165 +4,115 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tembea | Destinations</title>
-    <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <header class="navbar">
-  <div class="navbar-logo">
-    <h1><a href="./index.html" class="logo">Tembea Kenya</a></h1>
-    <p>Kenya is a home to different and rare wildlife</p>
-  </div>
+      <div class="navbar-logo">
+        <h1><a href="./index.html" class="logo">Tembea Kenya</a></h1>
+        <p>Kenya is a home to different and rare wildlife</p>
+      </div>
 
-  <!-- Mobile Menu Toggle Button -->
-  <button 
-    type="button" 
-    class="menu-toggle" 
-    aria-controls="main-nav" 
-    aria-expanded="false" 
-    aria-label="Toggle navigation menu">
-    <span class="hamburger-icon" aria-hidden="true"></span>
-  </button>
+      <!-- Mobile Menu Toggle Button -->
+      <button
+        type="button"
+        class="menu-toggle"
+        aria-controls="main-nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger-icon" aria-hidden="true"></span>
+      </button>
 
-  <nav id="main-nav" aria-label="Main">
-    <div class="navbar-links">
-      <a href="./index.html" aria-current="page">Home</a>
-      <a href="./about.html">About us</a>
-      <a href="./contact.html">Contact</a>
-      <a href="./destinations.html">Destinations</a>
-    </div>
-    <a href="./destinations.html" class="btn">Explore Now</a>
-  </nav>
-</header>
+      <nav id="main-nav" aria-label="Main">
+        <div class="navbar-links">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About us</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./destinations.html" aria-current="page">Destinations</a>
+        </div>
+        <a href="./destinations.html" class="btn">Explore Now</a>
+      </nav>
+    </header>
 
-    
     <main class="destinations">
-      <h2>Explore Kenya's Destinations</h2>
+      <header class="page-header">
+        <h2>Explore Kenya's Destinations</h2>
+        <p>
+          Discover iconic wildlife reserves, lush urban forests, and pristine
+          Indian Ocean beaches.
+        </p>
+      </header>
 
-      <section>
-        <h2>Safari and Wildlife</h2>
+      <!-- Filter, Live Search & Dynamic Destination Grid -->
+      <section class="gallerydest" aria-labelledby="destinations-list-heading">
+        <h2 id="destinations-list-heading">All Destinations</h2>
 
-        <article class="gallery">
-          <h3>Nairobi National Park</h3>
-          <img class="gallery-image"
-            src="./Images/nairobi-nationalpark.jpg"
-            alt="Two zebras grazing with a giraffe and antelopes in the background at Nairobi National Park"
-            width="500"
-            height="300"
-          />
-          <p>
-            Nairobi National Park is located just outside Kenya's capital and
-            offers visitors the opportunity to see wildlife against a backdrop
-            of the city skyline.
-          </p>
-          <p>
-            Best time to visit:
-            <time datetime="2026-07">July to October</time>
-          </p>
-        </article>
+        <div class="filter-controls">
+          <!-- Region Filter Buttons (Event delegation on #region-filters) -->
+          <div
+            id="region-filters"
+            class="filter-buttons"
+            role="group"
+            aria-label="Filter destinations by region"
+          >
+            <button
+              type="button"
+              class="filter-btn active"
+              data-region="all"
+              aria-pressed="true"
+            >
+              All
+            </button>
+            <button
+              type="button"
+              class="filter-btn"
+              data-region="coast"
+              aria-pressed="false"
+            >
+              Coast
+            </button>
+            <button
+              type="button"
+              class="filter-btn"
+              data-region="rift valley"
+              aria-pressed="false"
+            >
+              Rift Valley
+            </button>
+            <button
+              type="button"
+              class="filter-btn"
+              data-region="central"
+              aria-pressed="false"
+            >
+              Central
+            </button>
+          </div>
 
-        <article class="gallery">
-          <h3>Karura Forest</h3>
-          <img class="gallery-image"
-            src="./Images/karura-forest.jpg"
-            alt="Serene forest surroundings with greenery and walking trails in Karura Forest"
-            width="300"
-            height="400"
-          />
-          <p>
-            Karura Forest is a peaceful urban forest offering walking trails,
-            waterfalls, caves and opportunities to enjoy nature close to
-            Nairobi.
-          </p>
-          <p>
-            Best time to visit:
-            <time datetime="2026-06">June to October</time>
-          </p>
-        </article>
+          <!-- Live Search Input -->
+          <div class="search-box">
+            <label for="destination-search">Search destinations</label>
+            <input
+              type="search"
+              id="destination-search"
+              placeholder="Search by destination name..."
+              autocomplete="off"
+            />
+          </div>
+        </div>
 
-        <article class="gallery">
-          <h3>Hell's Gate National Park</h3>
-          <img class="gallery-image"
-            src="./Images/hells-gate.jpg"
-            alt="Rocky cliffs and a natural landscape at Hell's Gate National Park"
-            width="300"
-            height="500"
-          />
-          <p>
-            Hell's Gate National Park is famous for its dramatic cliffs, gorges
-            and waterfalls. Visitors can also enjoy activities such as cycling
-            and hiking.
-          </p>
-          <p>
-            Best time to visit:
-            <time datetime="2026-06">June to October</time>
-          </p>
-        </article>
+        <!-- Live Result Count -->
+        <p id="result-count" aria-live="polite"></p>
 
-        <article class="gallery">
-          <h3>Lake Nakuru National Park</h3>
-          <img class="gallery-image"
-            src="./Images/nakuru-city.jpg"
-            alt="Flamingos gathered along the shores of Lake Nakuru"
-            width="300"
-            height="500"
-          />
-          <p>
-            Lake Nakuru National Park is known for its beautiful lake, diverse
-            wildlife and large populations of flamingos.
-          </p>
-          <p>
-            Best time to visit:
-            <time datetime="2026-06">June to October</time>
-          </p>
-        </article>
+        <!-- Dynamic Cards Grid -->
+        <div id="destinations-grid" class="cards-grid"></div>
       </section>
 
-      <section>
-        <h2>Coast and Beaches</h2>
-
-        <article class="gallery">
-          <h3>Mombasa</h3>
-          <img class="gallery-image"
-            src="./Images/mombasa-city.jpg"
-            alt="Mombasa coastline with buildings and the Indian Ocean"
-            width="300"
-            height="500"
-          />
-          <p>
-            Mombasa is a historic coastal city known for its rich Swahili
-            culture, beautiful beaches, historic sites and vibrant coastal
-            atmosphere.
-          </p>
-          <p>
-            Best time to visit:
-            <time datetime="2026-01">January to March</time>
-          </p>
-        </article>
-
-        <article class="gallery">
-          <h3>Diani Beach</h3>
-          <img class="gallery-image"
-            src="./Images/diani-beach.jpg"
-            alt="White sandy beach and clear turquoise water at Diani Beach"
-            width="300"
-            height="500"
-          />
-          <p>
-            Diani Beach is a popular coastal destination famous for its white
-            sandy beaches, clear waters and opportunities for water-based
-            activities.
-          </p>
-          <p>
-            Best time to visit:
-            <time datetime="2026-01">January to March</time>
-          </p>
-        </article>
-      </section>
-
-      <section>
-        <h2>Destination Comparison</h2>
+      <!-- Destination Comparison Table -->
+      <section class="gallerydest" aria-labelledby="comparison-heading">
+        <h2 id="comparison-heading">Destination Comparison</h2>
 
         <div class="table-wrapper">
           <table>
@@ -229,7 +179,7 @@
         </a>
       </address>
     </footer>
-    <script type="module" src="./js/main.js" ></script>
 
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

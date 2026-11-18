@@ -1,141 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tembea</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tembea | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
     <header class="navbar">
-  <div class="navbar-logo">
-    <h1><a href="./index.html" class="logo">Tembea Kenya</a></h1>
-    <p>Kenya is a home to different and rare wildlife</p>
-  </div>
+      <div class="navbar-logo">
+        <h1><a href="./index.html" class="logo">Tembea Kenya</a></h1>
+        <p>Kenya is a home to different and rare wildlife</p>
+      </div>
 
-  <!-- Mobile Menu Toggle Button -->
-  <button 
-    type="button" 
-    class="menu-toggle" 
-    aria-controls="main-nav" 
-    aria-expanded="false" 
-    aria-label="Toggle navigation menu">
-    <span class="hamburger-icon" aria-hidden="true"></span>
-  </button>
+      <!-- Mobile Menu Toggle Button -->
+      <button
+        type="button"
+        class="menu-toggle"
+        aria-controls="main-nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger-icon" aria-hidden="true"></span>
+      </button>
 
-  <nav id="main-nav" aria-label="Main">
-    <div class="navbar-links">
-      <a href="./index.html" aria-current="page">Home</a>
-      <a href="./about.html">About us</a>
-      <a href="./contact.html">Contact</a>
-      <a href="./destinations.html">Destinations</a>
-    </div>
-    <a href="./destinations.html" class="btn">Explore Now</a>
-  </nav>
-</header>
-
-    <main >
-      <section class="hero" >
-        <div >
-            <h2>Featured Destinations</h2>
+      <nav id="main-nav" aria-label="Main">
+        <div class="navbar-links">
+          <a href="./index.html" aria-current="page">Home</a>
+          <a href="./about.html">About us</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./destinations.html">Destinations</a>
         </div>
-      
-        <article class="card-row"> 
-            <div class="card">
-                <img src="./Images/nairobi-nationalpark.jpg" alt="A herd of elephants walking through the savannah in Masai Mara National Reserve" width="300" height="500">
-                <h3>Masai Mara National Reserve</h3>
-                <p>Masai Mara is a world-renowned wildlife reserve in Kenya, famous for its diverse wildlife and the annual wildebeest migration.</p>
-                <a href="./destinations.html">explore more</a> 
-            </div>
-            <div class="card">
-                <h3>Nairobi City</h3>
-                <figure>
-                    <img src="./Images/nairobi-city.jpg" alt="Aerial view of Nairobi city and the Nairobi Expressway" width="300" height="500">
-                    <figcaption>Aerial view of Nairobi city and the Nairobi Expressway</figcaption>
-                </figure>
-                <p>Nairobi is Kenya's vibrant capital and is famous for having a national park within the city</p>
-                 <a href="./destinations.html">explore more</a>
-            </div>
+        <a href="./destinations.html" class="btn">Explore Now</a>
+      </nav>
+    </header>
 
-        </article >
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-content">
+          <h2 id="hero-heading">Discover the Magic of Kenya</h2>
+          <p>
+            From the golden savannahs of the Maasai Mara to the white sandy
+            shores of Diani Beach, plan your unforgettable East African
+            adventure.
+          </p>
+          <a href="./destinations.html" class="btn">Explore All Destinations</a>
+        </div>
+      </section>
 
-        <aside>
-           <div class="card">
-             <h2>Travel Tips</h2>
-                <ul>
-                   <li>Nairobi gets really cold,carry heavy clothes</li> 
-                   <li> Be ready to use Mpesa- cashless payments</li>
-                   <li> Swahili and English are widely spoken </li>
-                </ul>
-            </div>
+      <!-- Featured Destinations Section (JS renders 3 featured cards here) -->
+      <section class="gallerydest" aria-labelledby="featured-heading">
+        <h2 id="featured-heading">Featured Destinations</h2>
+
+        <div id="featured-destinations" class="cards-grid"></div>
+
+        <div class="section-cta">
+          <a href="./destinations.html" class="btn">View All 9 Destinations</a>
+        </div>
+      </section>
+
+      <!-- Travel Tips Section -->
+      <section class="gallerydest" aria-labelledby="tips-heading">
+        <h2 id="tips-heading">Essential Kenya Travel Tips</h2>
+
+        <aside class="travel-tips" aria-label="Kenya Travel Tips">
+          <ul>
+            <li>Nairobi evenings can get cool—pack a light jacket or sweater</li>
+            <li>Be ready to use M-Pesa for fast cashless payments</li>
+            <li>Swahili and English are widely spoken across the country</li>
+          </ul>
         </aside>
-          
-        <article class="card-row">
-            <div class="card">
-                <h3>Lake Naivasha</h3>
-                <figure>
-                    <img src="./Images/lake-naivasha.webp" alt="A boat on Lake Naivasha with hippos and birds in the background" width="300" height="500">
-                    <figcaption>A boat on Lake Naivasha with hippos and birds in the background</figcaption>
-                </figure>
-                <p>Lake Naivasha is a freshwater lake in Kenya's Great Rift Valley, known for its scenic beauty and diverse wildlife.</p>
-                <a href="./destinations.html">explore more</a>
-            </div>
-            <div class="card">
-                <h3>Mombasa County</h3>
-                <figure>
-                    <img src="./Images/mombasa-city.jpg" alt="Coastal hotel overlooking the Indian Ocean in Mombasa" width="300" height="500">
-                    <figcaption>Coastal hotel overlooking the Indian Ocean in Mombasa</figcaption>
-                </figure>
-                <p>Mombasa is rich in cultural activities with a lot of fun</p>
-                <a href="./destinations.html">explore more</a>
-            </div>  
-        </article>
-        <aside>
-             <div class="card">
-            <h2>Travel Tips</h2>
-                <ul>
-                    <li>Weather is hot,dress light clothes</li>
-                    <li>Very Generous people, dont turn down an invite</li>
-                   <li> Swahili is  widely spoken</li> 
-                </ul>
-            </div>
-        </aside>
-
-
-        <article class="card-row">
-            <div class="card">
-                <h3>Nakuru City</h3>
-                <figure>
-                    <img src="./Images/nakuru-city.jpg" alt="Flamingos gathered along the shore of Lake Nakuru" width="300" height="500">
-                    <figcaption>Flamingos gathered along the shore of Lake Nakuru</figcaption>
-                </figure>
-                <p>The city with beautiful Flamingos</p>
-                <a href="./destinations.html">explore more</a>
-            </div>
-        </article>
-
-        <aside>
-             <div class="card">
-            <h2>Travel Tips</h2>
-                <ul>
-                   <li>Very many tourist attraction sites</li> 
-                   <li>Moderate weather</li>  
-                   <li>Cheaper prices for goods and services</li> 
-                </ul>
-
-            </div>
-        </aside>
-        </section>
+      </section>
     </main>
 
-<footer>
-   
-    &copy; 2026 Mohamed Dayib  
-    Contact us <a href="mailto:Mohamedtayyib57@gmail.com">Email</a>
-    
-</footer>
-    <script type="module" src="./js/main.js" ></script>
+    <footer>
+      <p>&copy; 2026 Mohamed Dayib</p>
+      <address>
+        Contact us:
+        <a href="mailto:Mohamedtayyib57@gmail.com">
+          Mohamedtayyib57@gmail.com
+        </a>
+      </address>
+    </footer>
 
-</body>
+    <script type="module" src="./js/main.js"></script>
+  </body>
 </html>
