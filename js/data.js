@@ -8,7 +8,7 @@ export const destinations = [
         nights: 5,
         isAvailable: true,
         description: "Pristine white sand beach on the Indian Ocean.",
-        image: "images/diani.jpg",
+        image: "Images/diani.jpg",
         imageAlt: "Wide sandy beach with palm trees at sunset"
     },
     {
@@ -20,7 +20,7 @@ export const destinations = [
         nights: 4,
         isAvailable: true,
         description: "World-renowned wildlife reserve famous for the Great Migration and big cats.",
-        image: "images/maasai-mara.jpg",
+        image: "Images/maasai-mara.jpg",
         imageAlt: "A lion resting on the savannah grass in Maasai Mara"
     },
     {
@@ -32,7 +32,7 @@ export const destinations = [
         nights: 3,
         isAvailable: true,
         description: "Famous for massive elephant herds and iconic views of Mount Kilimanjaro.",
-        image: "images/amboseli.jpg",
+        image: "Images/amboseli.jpg",
         imageAlt: "Elephants walking across the plains with Mount Kilimanjaro in the background"
     },
     {
@@ -44,7 +44,7 @@ export const destinations = [
         nights: 4,
         isAvailable: true,
         description: "Stunning marine national park known for coral reefs, sea turtles, and pristine shores.",
-        image: "images/watamu.jpg",
+        image: "Images/watamu.jpg",
         imageAlt: "Clear turquoise ocean water crashing gently on white sandy coral rocks"
     },
     {
@@ -56,7 +56,7 @@ export const destinations = [
         nights: 3,
         isAvailable: true,
         description: "Alkaline lake sanctuary famous for vibrant pink flamingos and rhino populations.",
-        image: "images/lake-nakuru.jpg",
+        image: "Images/lake-nakuru.jpg",
         imageAlt: "Flocks of pink flamingos wading along the shores of Lake Nakuru"
     },
     {
@@ -68,7 +68,7 @@ export const destinations = [
         nights: 5,
         isAvailable: false,
         description: "Africa's second-highest peak offering breathtaking alpine scenery and hiking trails.",
-        image: "images/mount-kenya.jpg",
+        image: "Images/mount-kenya.jpg",
         imageAlt: "Snow-dusted rocky peaks of Mount Kenya under a blue sky"
     },
     {
@@ -80,7 +80,7 @@ export const destinations = [
         nights: 2,
         isAvailable: true,
         description: "Dramatic landscape of towering cliffs, gorges, and geothermal activity where you can cycle freely.",
-        image: "images/hells-gate.jpg",
+        image: "Images/hells-gate.jpg",
         imageAlt: "Steep rocky gorge walls at Hell's Gate National Park"
     },
     {
@@ -92,7 +92,7 @@ export const destinations = [
         nights: 4,
         isAvailable: true,
         description: "One of Kenya's oldest and largest parks, famous for its iconic red dust elephants.",
-        image: "images/tsavo-east.jpg",
+        image: "Images/tsavo-east.jpg",
         imageAlt: "Red dust-covered elephant standing under an acacia tree in Tsavo"
     },
     {
@@ -104,7 +104,7 @@ export const destinations = [
         nights: 4,
         isAvailable: false,
         description: "UNESCO World Heritage site featuring ancient Swahili architecture, winding alleys, and dhow cruises.",
-        image: "images/lamu.jpg",
+        image: "Images/lamu.jpg",
         imageAlt: "Traditional wooden dhow boats sailing near the historic waterfront of Lamu"
     }
 ];
